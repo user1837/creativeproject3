@@ -53,6 +53,20 @@ var app = new Vue({
 				this.nmWord = "The word " + this.baseWord + " does not mutate nasally.";
 			}
 		},
+		aspiratelyMutate: function() {
+			this.baseWord = this.baseWord.toLowerCase();
+			var firstChar = this.baseWord.charAt(0);
+			var secondChar = this.baseWord.charAt(1);
+			if (firstChar === 'p' && secondChar !== 'h') {
+				this.amWord = this.baseWord.replace('p', 'ph');
+			} else if (firstChar === 't' && secondChar !== 'h') {
+				this.amWord = this.baseWord.replace('t', 'th');
+			} else if (firstChar === 'c' && secondChar !== 'h') {
+				this.amWord = this.baseWord.replace('c', 'ch');
+			} else {
+				this.amWord = "The word " + this.baseWord + " does not mutate aspirately."
+			}
+		}
 	}
 });
 
