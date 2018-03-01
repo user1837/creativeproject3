@@ -2,13 +2,22 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="styles.css">
-    <title>Welsh Mutator</title>
+    <title>Welsh Word Mutator</title>
   </head>
   <body>
     <div id="app">
     	<div class="header">
     		<img src="welshflag.png" />
     		<h1> Welsh Word Mutator </h1>
+    	</div>
+    	<hr>
+    	<div id="about">
+    		<p class="intro">Croeso! The Welsh Word Mutator is a tool for finding the mutated forms of Welsh words. 
+    		Mutations in Welsh are systematic sound changes to the first letters of words that occur in specific syntactic and lexical environments. 
+    		There are three types of mutations: soft, nasal, and aspirate (for a full description of Welsh mutation rules, visit
+    		<a href="http://www.bbc.co.uk/wales/learnwelsh/pdf/welshgrammar_mutations.pdf"> this link</a>).
+    		To find a mutation, type the word into the Word box and click on the name of the mutation.</p>
+    		<p class="intro">Example words to try: ci, poptyping, tad, brawd, deintydd, gwdihw, mam, llyfrgell, rhan, smwddio, eisteddfod, ffrind, chwaer</p>
     	</div>
     	<div id="inputBox">
     		<label> Word: </label>
@@ -22,6 +31,7 @@
     		<div><p> {{ nmWord }} </p></div>
    	 		<div><p>{{ amWord }} </p></div>
    	 	</div>
+   	 	<hr>
 		<div class="footer">
 			<a href="https://github.com/user1837/creativeproject3.git">Github Repository</a>
 		</div>

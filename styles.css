@@ -7,6 +7,8 @@
 
 h1 {
 	align-self: end;
+	font-family: "Garamond";
+	font-size: 35px;
 }
 
 #inputBox {
@@ -20,23 +22,29 @@ h1 {
 	grid-template-columns: 20% 20% 20%;
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
-	margin: 15px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
 	justify-content: center;
 }
 
 input {
-	font-size: 20px;
+	font-size: 25px;
 	margin: 5px;
+	font-family: "Garamond";
 }
 
 p {
 	text-align: center;
 	font-size: 30px;
+	font-family: "Garamond";
 }
 
 button {
-	font-size: 20px;
+	font-size: 25px;
 	padding: 5px;
+	font-family: "Garamond";
 }
 
 button:hover {
@@ -46,14 +54,36 @@ button:hover {
 
 label {
 	font-size: 25px;
+	font-family: "Garamond";
 }
 
 a {
-	text-decoration: none;
 	color: black;
 }
 
 a:hover {
 	cursor: pointer;
 	color: #00AB39;
+}
+
+#about {
+	margin: 50px;
+	padding-right: 75px;
+	padding-left: 75px;
+}
+
+.intro {
+	font-size: 23px;
+	margin-right: 75px;
+	margin-left: 75px;
+	float: center;
+}
+
+.footer {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-top: 30px;
+	font-size: 23px;
+	text-align: center;
 }
