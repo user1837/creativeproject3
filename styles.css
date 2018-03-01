@@ -1,0 +1,59 @@
+.header {
+	display: grid;
+	grid-template-columns: 205px auto;
+	grid-column-gap: 5px;
+	margin: 15px;
+}
+
+h1 {
+	align-self: end;
+}
+
+#inputBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	margin: 15px;
+	justify-content: center;
+}
+
+input {
+	font-size: 20px;
+	margin: 5px;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+}
+
+button {
+	font-size: 20px;
+	padding: 5px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #00AB39;
+}
+
+label {
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #00AB39;
+}

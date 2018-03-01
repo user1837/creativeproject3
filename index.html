@@ -6,16 +6,25 @@
   </head>
   <body>
     <div id="app">
-    <input type="text" v-model="baseWord">
-    <button v-on:click="softlyMutate">Soft Mutation</button>
-    <p> Softly mutated word: {{ smWord }} </p>
-    <button v-on:click="nasallyMutate">Nasal Mutation</button>
-    <p> Nasally mutated word: {{ nmWord }} </p>
-    <button v-on:click="aspiratelyMutate">Aspirate Mutation</button>
-    <p> Aspirately mutated word: {{ amWord }} </p>
-	<div class="footer">
-		<a href="https://github.com/user1837/creativeproject3.git">Github Repository</a>
-	</div>
+    	<div class="header">
+    		<img src="welshflag.png" />
+    		<h1> Welsh Word Mutator </h1>
+    	</div>
+    	<div id="inputBox">
+    		<label> Word: </label>
+    		<input type="text" v-model="baseWord">
+    	</div>
+    	<div id="container">
+    		<button v-on:click="softlyMutate">Soft Mutation</button>
+    		<button v-on:click="nasallyMutate">Nasal Mutation</button>
+    		<button v-on:click="aspiratelyMutate">Aspirate Mutation</button>
+    		<div><p>{{ smWord }} </p></div>
+    		<div><p> {{ nmWord }} </p></div>
+   	 		<div><p>{{ amWord }} </p></div>
+   	 	</div>
+		<div class="footer">
+			<a href="https://github.com/user1837/creativeproject3.git">Github Repository</a>
+		</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="script.js"></script>
